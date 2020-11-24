@@ -1,10 +1,12 @@
 library(shiny)
 library(tidyverse)
+library(shinythemes)
 options(shiny.autoreload = TRUE)
 
 bcl <- read_csv("bcl-data.csv")
 
 ui <- fluidPage(
+  theme = shinytheme("cyborg"),
   titlePanel("BC Liquor Alcohol Content Explorer"),
   fluidRow(
     column(
@@ -27,8 +29,13 @@ ui <- fluidPage(
         )
       )
       ),
-    plotOutput("plot"),
-    tableOutput("table")
+    column(
+      width = 12, mainPanel(
+      plotOutput("plot")
+    )
+    ),
+    tableOutput("table") ,
+
   )
 )
 

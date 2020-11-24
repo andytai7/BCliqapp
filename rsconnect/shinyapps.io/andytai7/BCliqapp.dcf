@@ -5,8 +5,8 @@ account: andytai7
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3295920
-bundleId: 3900858
+bundleId: 3900920
 url: https://andytai7.shinyapps.io/BCliqapp/
-when: 1606242348.04595
+when: 1606243433.00442
 asMultiple: FALSE
 asStatic: FALSE
